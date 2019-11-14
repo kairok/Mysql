@@ -13,6 +13,7 @@ services:
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
+    restart: always
     links: 
       - mariadb:db
     ports:
